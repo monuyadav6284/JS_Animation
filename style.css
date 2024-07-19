@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(51, 50, 49);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+#line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+    transform-origin: left center;
+    padding: 2px;
+}
+
+#line1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(237, 27, 27);
+    transform-origin: right center;
+    padding: 2px;
+}
+
+@keyframes rotateLine {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+
+}
+
+@keyframes rotateLine {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+#input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(202, 82, 82);
+    margin: 20px;
+}
+
+#button {
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(202, 82, 82);
+    cursor: pointer;
+}
